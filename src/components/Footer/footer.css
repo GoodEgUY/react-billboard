@@ -1,0 +1,16 @@
+.footer {
+    background-color: black;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p  {
+    color: aliceblue;
+    
+}
+a {
+    color: aqua;
+    text-decoration: none;
+}
