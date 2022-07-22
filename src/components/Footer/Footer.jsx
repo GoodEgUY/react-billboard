@@ -10,7 +10,7 @@ function Footer() {
             </div>
             
             <div className="rightFooter">
-                <p>all rigth reserved &#xa9;</p>
+                <p>all rigth reserved &#xa9;2022</p>
             </div>
         </footer>    
     );
