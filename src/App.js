@@ -4,7 +4,7 @@ import Cart from "./components/Cart/Cart";
 import Popup from "./components/Pop-up/Popup";
 
 function App() {
-const [popupOpened, setPopupOpened] = React.useState(false);
+const [popupOpened, setPopupOpened] = React.useState(false); // useState импортируй там же где и реакт
   return (
     <div className="App">
     {popupOpened ? <Popup closePopup = {() => setPopupOpened(false)}/> : null}
@@ -12,7 +12,7 @@ const [popupOpened, setPopupOpened] = React.useState(false);
       <div className="wrapper">
         
         <header>
-          
+          // шапку в отдельный компонент
           <div>
             <h2 className="logo">React-BillBoard</h2>
           </div>
@@ -39,6 +39,8 @@ const [popupOpened, setPopupOpened] = React.useState(false);
         </div>
       </div>
     </div>
+// где футер? тоже в отдельный компонент. 
+// Сделать главный компонент, который импортируеться в app а уже в него комопненты шапки, футера и основного контента
   );
 }
 
