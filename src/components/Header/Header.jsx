@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Popup from "../Pop-up/Popup";
 
 const Header = () => {
+  const [city, setCity] = useState();
   const [popupOpened, setPopupOpened] = useState(false);
 
   return (
@@ -20,7 +21,7 @@ const Header = () => {
         <a href="#" className="headerIcon">
           <img src="/profile.png" alt="card" width={30} height={30} />
         </a>
-        <span>Мой пррофиль</span>
+        <span>{city ?? "Украина"}</span>
       </div>
     </header>
   );
