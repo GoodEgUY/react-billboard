@@ -1,5 +1,4 @@
-*{
-  
+* {
   margin: 0;
   padding: 0;
 }
@@ -7,19 +6,17 @@
 .wrapper {
   overflow: hidden;
   background-color: #303030;
-  
-  width:100%;
+
+  width: 100%;
   margin: 0 auto;
 }
 
 .main {
-  
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   background-color: #303030;
   margin: 0 auto;
-  
 }
 header {
   background-color: #292929;
@@ -46,9 +43,8 @@ header {
   background-color: aqua;
   border: none;
   padding: 10px 20px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
-  
 }
 
 .orderBtn:hover {

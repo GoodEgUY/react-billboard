@@ -1,30 +1,20 @@
 import React from "react";
-import Cart from "../Cart/Cart";
+import "./main.css";
 
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import Content from "../Content/Content";
 
+const Main = () => {
+  return (
+    <>
+      <Header />
+      <div>
+        <Content />
+      </div>
+      <Footer />
+    </>
+  );
+};
 
-function Main() {
-
-    return (
-        <div className="content">
-            <h1>Обьявления</h1>
-            <div className="main">
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-             <Cart/>
-            </div>
-        </div>
-
-
-    );
-}
 export default Main;
