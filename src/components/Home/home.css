@@ -1,0 +1,68 @@
+.home {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    
+    
+}
+.home h1 {
+    animation: ring 4s infinite;
+}
+.home h2 {
+    font-size: 30px;
+}
+
+.logo1 {
+    margin: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 120px;
+  }
+
+.continueBtn  {
+    margin-top: 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: aqua;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.continueBtn:hover {
+    transform: translateY(-3px);
+  }
+
+.continueBtn p  {
+font-size: 50px;
+    color: black;
+}
+
+
+@keyframes ring {
+    0% {
+      transform: translateY(0);
+    }
+    15% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    65% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+  }

@@ -1,28 +1,48 @@
 .cityModalBody {
-  padding: 50px 30px;
-  background-color: aliceblue;
-  width: 500px;
-  border-radius: 20px;
-  display: flex;
-  margin: 0 auto;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 30px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    margin: 0 auto;
 }
-
+.cityModalBody h2 {
+    margin-bottom: 40px;
+}
 .selectBox {
-  display: flex;
+    display: flex;
+}
+.selectBox button {
+   
+    font-size: 30px;
 }
 
 .cityButton {
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 20px;
-  font-size: 20px;
-  background-color: tommato;
-  border: none;
-  padding: 10px 20px;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(253, 203, 249);
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.citybutton:hover {
-  transform: translateY(-3px);
+.cityButton:hover {
+    transform: translateY(-6px);
+}
+
+.cityBtn {
+    margin-top: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: aqua;
+    border: none;
+    padding: 10px 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
 }

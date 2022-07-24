@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./header.css"
 import Popup from "../Pop-up/Popup";
 import CityModal from "../CItyModal/CityModal";
 
@@ -28,9 +29,11 @@ const Header = () => {
       ) : null}
       {popupOpened ? <Popup closePopup={() => setPopupOpened(false)} /> : null}
       <div>
-        <h2 className="logo">React-BillBoard</h2>
+        <a href="/"><h2 className="logo">React-BillBoard</h2></a>
       </div>
       <div className="headerRight">
+      <a href="/about" className="navLink">Обьявления</a>
+        
         <button onClick={() => setPopupOpened(true)} className="orderBtn">
           Заказать звонок
         </button>
@@ -38,6 +41,7 @@ const Header = () => {
         <button onClick={() => setCityModalOpened(true)} className="orderBtn">
           {city ?? "Город"}
         </button>
+        <a href="/about" className="navLink">О нас</a>
       </div>
     </header>
   );

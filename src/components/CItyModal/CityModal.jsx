@@ -12,28 +12,22 @@ const CityModal = ({ closeFunc, setCity }) => {
     <div className="popupWrapper">
       <div className="cityModalBody">
         <h2>Выберите город</h2>
-        <div>
-          <div className="selectBox">
-            <button onClick={() => cityHandler("Киев")} className="cityButton">
-              Киев
-            </button>
-            <button
-              onClick={() => cityHandler("Харьков")}
-              className="cityButton"
-            >
-              Харьков
-            </button>
-            <button
-              onClick={() => cityHandler("Одесса")}
-              className="cityButton"
-            >
-              Одесса
-            </button>
-          </div>
-          <button className="popupBtn" onClick={closeFunc}>
-            Сохранить
+
+        <div className="selectBox">
+          <button onClick={() => cityHandler("Киев")} className="cityButton">
+            Киев
+          </button>
+          <button onClick={() => cityHandler("Харьков")} className="cityButton">
+            Харьков
+          </button>
+          <button onClick={() => cityHandler("Одесса")} className="cityButton">
+            Одесса
           </button>
         </div>
+        <button className="cityBtn" onClick={closeFunc}>
+          Сохранить
+        </button>
+
         <img src="../images/cross.png" className="popupClose" alt="Close" />
       </div>
     </div>
