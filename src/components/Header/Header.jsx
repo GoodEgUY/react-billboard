@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Popup from "../Pop-up/Popup";
 import CityModal from "../CItyModal/CityModal";
 
@@ -6,6 +6,17 @@ const Header = () => {
   const [city, setCity] = useState();
   const [popupOpened, setPopupOpened] = useState(false);
   const [cityModalOpened, setCityModalOpened] = useState(false);
+
+  useEffect(() => {
+    const isSelectCity = localStorage.getItem("selectCity");
+
+    if (!isSelectCity) {
+      setCityModalOpened(true);
+    } else {
+      setCity(isSelectCity);
+    }
+  }, []);
+
   return (
     <header>
       {cityModalOpened ? (

@@ -1,8 +1,9 @@
 import React from "react";
 import "./citymodal.css";
 
-const CityModal = ({ closeFunc, city, setCity }) => {
-  const cityHandler = (city) => {
+const CityModal = ({ closeFunc, setCity }) => {
+  const cityHandler = async (city) => {
+    await localStorage.setItem("selectCity", city);
     setCity(city);
     closeFunc();
   };
