@@ -1,0 +1,10 @@
+.cityModalBody {
+    
+    
+    padding: 50px 30px;
+   background-color: aliceblue;
+   width: 400px;
+   border-radius: 20px;
+    display: flex;
+    margin: 0 auto;
+}

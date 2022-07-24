@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import Popup from "../Pop-up/Popup";
+import CityModal from "../CItyModal/CityModal";
 
 const Header = () => {
   const [city, setCity] = useState();
   const [popupOpened, setPopupOpened] = useState(false);
-
+  const [cityModalOpened, setCityModalOpened] = useState(true)
   return (
     <header>
+      {cityModalOpened ? <CityModal/> : null }
       {popupOpened ? <Popup closePopup={() => setPopupOpened(false)} /> : null}
       <div>
         <h2 className="logo">React-BillBoard</h2>
