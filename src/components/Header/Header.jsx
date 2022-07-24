@@ -5,10 +5,16 @@ import CityModal from "../CItyModal/CityModal";
 const Header = () => {
   const [city, setCity] = useState();
   const [popupOpened, setPopupOpened] = useState(false);
-  const [cityModalOpened, setCityModalOpened] = useState(true)
+  const [cityModalOpened, setCityModalOpened] = useState(false);
   return (
     <header>
-      {cityModalOpened ? <CityModal/> : null }
+      {cityModalOpened ? (
+        <CityModal
+          closeFunc={() => setCityModalOpened(false)}
+          city={city}
+          setCity={setCity}
+        />
+      ) : null}
       {popupOpened ? <Popup closePopup={() => setPopupOpened(false)} /> : null}
       <div>
         <h2 className="logo">React-BillBoard</h2>
@@ -17,13 +23,10 @@ const Header = () => {
         <button onClick={() => setPopupOpened(true)} className="orderBtn">
           Заказать звонок
         </button>
-        <a href="#" className="headerIcon">
-          <img src="/cart.png" alt="card" width={30} height={30} />
-        </a>
-        <a href="#" className="headerIcon">
-          <img src="/profile.png" alt="card" width={30} height={30} />
-        </a>
-        <span>{city ?? "Украина"}</span>
+
+        <button onClick={() => setCityModalOpened(true)} className="orderBtn">
+          {city ?? "Город"}
+        </button>
       </div>
     </header>
   );

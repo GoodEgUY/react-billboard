@@ -45,6 +45,7 @@ header {
   padding: 10px 20px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 .orderBtn:hover {

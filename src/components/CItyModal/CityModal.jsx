@@ -1,19 +1,38 @@
 import React from "react";
 import "./citymodal.css";
 
-const CityModal = () => {
+const CityModal = ({ closeFunc, city, setCity }) => {
+  const cityHandler = (city) => {
+    setCity(city);
+    closeFunc();
+  };
+
   return (
     <div className="popupWrapper">
       <div className="cityModalBody">
         <h2>Выберите город</h2>
-        <form>
-          <select name="" id="">
-            <option value="kiev">Киев</option>
-            <option value="kharkov" selected>Харьков</option>
-            <option value="lviv">Львов</option>
-          </select>
-          <button className="popupBtn">Сохранить</button>
-        </form>
+        <div>
+          <div className="selectBox">
+            <button onClick={() => cityHandler("Киев")} className="cityButton">
+              Киев
+            </button>
+            <button
+              onClick={() => cityHandler("Харьков")}
+              className="cityButton"
+            >
+              Харьков
+            </button>
+            <button
+              onClick={() => cityHandler("Одесса")}
+              className="cityButton"
+            >
+              Одесса
+            </button>
+          </div>
+          <button className="popupBtn" onClick={closeFunc}>
+            Сохранить
+          </button>
+        </div>
         <img src="../images/cross.png" className="popupClose" alt="Close" />
       </div>
     </div>
