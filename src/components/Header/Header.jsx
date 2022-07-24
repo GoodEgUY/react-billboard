@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Popup from "../Pop-up/Popup";
 
 const Header = () => {
-  const [popupOpened, setPopupOpened] = React.useState(false);
+  const [popupOpened, setPopupOpened] = useState(false);
 
   return (
     <header>
