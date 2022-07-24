@@ -1,17 +1,20 @@
 import React from "react";
 import "./main.css";
-
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import Content from "../Content/Content";
-
+import { BrowserRouter as Router, Routes , Route, Link} from "react-router-dom";
+import Page from "../Page/Page";
 const Main = () => {
   return (
     <>
       <Header />
-      <div>
-        <Content />
-      </div>
+      <Router>
+       <Routes>
+        <Route path="/" element={<Page />} />
+        <Route path="/" element={<Page />} />
+       </Routes>
+          
+      </Router>
       <Footer />
     </>
   );

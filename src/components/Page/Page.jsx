@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Cart from "../Cart/Cart";
 
-const Content = () => {
+const Page = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Page;
