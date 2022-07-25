@@ -19,8 +19,16 @@ const Page = () => {
           data.map((item) => <Cart title={item.title} description={item.id} />)
         ) : (
           <div>Sorry, no data</div>
+          
         )}
-      </div>
+        <Cart/>
+      <Cart/>
+      <Cart/>
+      <Cart/>
+      </div><Cart/>
+      
+
+
     </div>
   );
 };
